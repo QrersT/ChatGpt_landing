@@ -1,0 +1,19 @@
+.brand {
+  padding: 120px 0 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 120px;
+    /* width: 100%; */
+    margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

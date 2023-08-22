@@ -1,0 +1,72 @@
+/* misc */
+@import "./misc/vars.scss";
+@import "./misc/_mixins";
+@import "./misc/bootstrap-reboot";
+@import "./misc/container";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/* components */
+@import "./components/article/article.scss";
+@import "./components/brand/brand.scss";
+@import "./components/cta/cta.scss";
+@import "./components/feature/feature.scss";
+@import "./components/navbar/navbar.scss";
+
+/* containers */
+@import "./containers/blog/blog.scss";
+@import "./containers/features/features.scss";
+@import "./containers/footer/footer.scss";
+@import "./containers/header/header.scss";
+@import "./containers/possibility/possibility.scss";
+@import "./containers/whatGPT/whatGPT.scss";
+@import "./containers/future/future.scss";
+
+/* media */
+@import "./scss/media/animations";
+
+//-----------------------------------------------------------------
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: $--font-family;
+}
+
+.gradient-bg {
+  background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* global 92%+ browsers support */
+  background: linear-gradient(131deg, rgba(0, 40, 83, 1) 0%, rgba(4, 23, 48, 1) 50%, rgba(7, 45, 86, 1) 100%);
+}
+
+._gradient__text {
+  background: $--gradient-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.App {
+  overflow-x: hidden;
+}
+
+._main__btn {
+  color: #fff;
+  border: none;
+  background-color: $--color-btn;
+  @media (any-hover: hover) {
+    &:hover {
+      background: #771600;
+    }
+  }
+}

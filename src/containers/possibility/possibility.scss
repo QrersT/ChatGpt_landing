@@ -1,0 +1,124 @@
+.possibility {
+  padding: 100px 0 75px;
+  &__container {
+  }
+  &__top {
+  }
+  &__bottom {
+  }
+}
+._container {
+}
+.top-possibility {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+  &__img {
+    max-width: 546px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  &__content {
+    padding-top: 238px;
+    max-width: 480px;
+  }
+  &__early-access {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    &:nth-child(1) {
+      color: #71e5ff;
+      margin-bottom: 10px;
+    }
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    color: #81afdd;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+}
+.bottom-possibility {
+  padding: 75px 0;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 46px;
+  background: linear-gradient(90deg, #ae67fa 0%, #f49867 97.4%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__content {
+    margin-right: 20px;
+  }
+  &__subtitle {
+    color: #0e0e0e;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  &__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 45px;
+  }
+  &__btn {
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 13px 40px;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}
+
+._possibilities__blue {
+  color: #71e5ff;
+}
+._possibilities__orange {
+  color: #ff8a71;
+}
+
+@media (max-width: ($md1 + px)) {
+  .top-possibility {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-possibility__img {
+  }
+
+  .top-possibility__content {
+    padding-top: 50px;
+    max-width: 546px;
+  }
+}
+
+@media (max-width: ($md3 + px)) {
+  .bottom-possibility {
+    padding: 20px;
+  }
+  .bottom-possibility__title {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
